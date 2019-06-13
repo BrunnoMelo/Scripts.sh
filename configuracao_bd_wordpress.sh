@@ -1,12 +1,12 @@
 #!/bin/bash
 
-sudo apt install -y mysql-server
+sudo apt -y install mysql-server
 
 CREATE DATABASE wordpress;
 
-CREATE USER 'bruno'@'localhost' IDENTIFIED BY 'wordpress';
+CREATE USER 'bruno'@'%' IDENTIFIED BY 'wordpress';
 
-GRANT ALL ON wordpress.* TO 'bruno'@'localhost';
+GRANT ALL ON wordpress.* TO 'bruno'@'%';
 
 FLUSH PRIVILEGES;
 EOF
