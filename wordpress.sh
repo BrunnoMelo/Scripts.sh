@@ -10,7 +10,7 @@ sudo apt -y update
 
 sudo apt -y install php-curl php-gd php-mbstring php-xml php-xmlrpc
 
-sudo apt-get -y install mysql-server
+#sudo apt-get -y install mysql-server
 
 sudo apt -y install apache2
 
@@ -19,16 +19,16 @@ sudo apt -y install php libapache2-mod-php php-mysql
 
 #Criando Banco de Dados para wordPress:
 
-sudo mysql << EOF
+#sudo mysql << EOF
 
-CREATE DATABASE wordpress;
+#CREATE DATABASE wordpress;
 
-CREATE USER 'bruno'@'localhost' IDENTIFIED BY 'wordpress';
+#CREATE USER 'bruno'@'localhost' IDENTIFIED BY 'wordpress';
 
-GRANT ALL ON wordpress.* TO 'bruno'@'localhost';
+#GRANT ALL ON wordpress.* TO 'bruno'@'localhost';
 
-FLUSH PRIVILEGES;
-EOF
+#FLUSH PRIVILEGES;
+#EOF
 
 #Baixando e configurando  wordPress:
 
